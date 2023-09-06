@@ -1,5 +1,14 @@
 .header {
-    border: 5px solid blue;
+    height: 125px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 125px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 50px;
+    padding-left: 15px;
+    background-color: cornflowerblue;
 }
 
 .container {
@@ -10,15 +19,25 @@
 .sidebar {
     border: 5px solid black;
     height: 800px;
+    margin-top: 12px;
+    margin-right: 12px;
 }
 
 .projects {
-    border: 5px solid red;
     height: 800px;
+    margin-top: 12px;
+    background-color: burlywood;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-template-rows: repeat(auto-fill, 100px);
+    grid-row-gap: 0;
 }
 
 #addTodoButton {
     font-size: large;
+    margin-right: 10px;
 }
 
 #popupForm {
@@ -54,10 +73,27 @@ textarea, select {
 }
 
 .itemContainer {
-    border: 5px solid black;
+    /*border: 5px solid black;*/
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.itemContainer:hover {
+    border-radius: 10px;
+    width: auto;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: cornflowerblue;
 }
 
 .projectBox {
@@ -65,5 +101,24 @@ textarea, select {
     border-radius: 10px;
     height: 100px;
     width: 100px;
+}
+
+#projectFormContainer {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+}
+
+#projectTitle {
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+.header-title {
+    text-decoration: line-through;
 }
 
